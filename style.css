@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.cf:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+ul {
+	clear: both;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+li {
+	display: inline-block;
+	float: left;
+	margin: 0 0 0 1px;
+	padding: 0 10px;
+}
+li ul {
+	display: none;
+	position: absolute;
+}
+li ul {
+	background: #7B920A;
+	color: #fff;
+}
+li:hover ul {
+	display: block;
+}
+
+.affMenu,
+.affMenuCheck {
+	display: none;
+	text-align: center;
+}
+.affMenuCheck:checked + ul {
+	display: block;
+}
+
+.bdc {
+	background: -webkit-linear-gradient(top, #ADD100 10%, #7B920A 90%);
+	background: -moz-linear-gradient(top, #ADD100 10%, #7B920A 90%);
+	background: -ms-linear-gradient(top, #ADD100 10%, #7B920A 90%);
+	background: -o-linear-gradient(top, #ADD100 10%, #7B920A 90%);
+	background: linear-gradient(top, #ADD100 10%, #7B920A 90%);
+	position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+	line-height: 32px;
+	z-index: 1000;
+}
+.bdc + header {
+	margin: 32px 0 0 0;
+}
+header h1 {
+	line-height: 32px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+nav {
+	background: -webkit-linear-gradient(top, #485563 10%, #29323c 90%);
+	background: -moz-linear-gradient(top, #485563 10%, #29323c 90%);
+	background: -ms-linear-gradient(top, #485563 10%, #29323c 90%);
+	background: -o-linear-gradient(top, #485563 10%, #29323c 90%);
+	background: linear-gradient(top, #485563 10%, #29323c 90%);
+	color: #fff;
+	line-height: 32px;
+}
+
+@media screen and (max-width : 760px){
+	.bdc {
+		position: absolute;
+			right: 0;
+			top: 32px;
+	}
+	.bdc .affMenu {
+		background-color: #ADD100;
+		position: absolute;
+			right: 0;
+			top: -32px;
+	}
+	.bdc + header {
+		background-color: #eee;
+		margin: 0 40px;
+	}
+	.affMenu {
+		display: block;
+		width: 32px;
+	}
+	.bdc ul,
+	nav ul {
+		display: none;
+		width: 100%;
+	}
+	nav {
+		position: absolute;
+			left: 0;
+			right: 0;
+			top: 32px;
+	}
+	nav .affMenu {
+		background-color: #485563;
+		position: absolute;
+			left: 0;
+			top: -32px;
+	}
+	ul li {
+		border-bottom: 1px solid #FFFFFF;
+		display: block;
+		float: none;
+	}
+}
