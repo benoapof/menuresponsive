@@ -25,19 +25,20 @@ Remove this if you use the .htaccess -->
 	<label for="affBdc" class="affMenu affBdc">☺</label>
 	<input type="checkbox" id="affBdc" class="affMenuCheck" role="button">
 	<ul class="cf">
-		<li>Mon profil</li>
-		<li>Mes CV</li>
-		<li>Mes alertes</li>
-		<li>Mes favoris</li>
-		<li>Mes candidatures</li>
-		<li>Mes tests</li>
-		<li>Espace connecté
+		<li class="logoBdc"><a href="">Logo</a>
+		<li>Mon profil
+		<li>Mes CV
+		<li>Mes alertes
+		<li>Mes favoris
+		<li>Mes candidatures
+		<li>Mes tests
+		<li class="connecT">Espace connecté
 			<ul class="hidden">
-				<li>Mes identifiants</li>
-				<li>Mes abonnements</li>
-				<li>Se déconnecter</li>
+				<li>Mes identifiants
+				<li>Mes abonnements
+				<li>Se déconnecter
 			</ul>
-		</li>
+		
 	</ul>
 </div>
 
@@ -49,15 +50,20 @@ Remove this if you use the .htaccess -->
 	<label for="affMenuSite" class="affMenu affMenuSite">☰</label>
 	<input type="checkbox" id="affMenuSite" class="affMenuCheck" role="button">
 	<ul class="cf">
-		<li>Emploi</li>
-		<li>Actualité</li>
-		<li>Dossiers</li>
-		<li>Métiers</li>
-		<li>Espace Recruteurs</li>
+		<li>Emploi
+		<li>Actualité
+		<li>Dossiers
+		<li>Métiers
+		<li class="recrutR">Espace Recruteurs
 	</ul>
 </nav>
 
 <div>
+	<h2>Todo</h2>
+	<ul>
+		<li>Ajouter un peu de js (bien oui quand même) pour éviter que les 2 menus soient ouvert simultanément sur la version mobile
+		<li>Essayer de charger le js uniquement pour les tailles d'écran qui le nécéssite
+	</ul>
 	contenu<br/>
 	contenu<br/>
 	contenu<br/>
@@ -135,6 +141,8 @@ Remove this if you use the .htaccess -->
 		&copy; Copyright  by b.poulard
 	</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

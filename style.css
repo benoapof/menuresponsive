@@ -7,32 +7,36 @@ body {
   content: "";
   display: table;
 }
-
-ul {
+.bdc ul,
+nav ul {
 	clear: both;
 	list-style-type:none;
-	margin:0;
+	margin:0 auto;
 	padding:0;
 	position: relative;
+	width: 1000px;
 }
-li {
+.bdc li,
+nav li {
 	display: inline-block;
 	float: left;
 	margin: 0 0 0 1px;
 	padding: 0 10px;
 }
-li ul {
+.bdc li ul,
+nav li ul {
 	display: none;
 	position: absolute;
 }
-li ul {
+.bdc li ul,
+nav li ul {
 	background: #7B920A;
 	color: #fff;
 }
-li:hover ul {
+.bdc li:hover ul,
+nav li:hover ul {
 	display: block;
 }
-
 .affMenu,
 .affMenuCheck {
 	display: none;
@@ -73,8 +77,15 @@ nav {
 	color: #fff;
 	line-height: 32px;
 }
+.connecT.connecT,
+.recrutR {
+	float: right;
+}
+.logoBdc.logoBdc {
+	display: none;
+}
 
-@media screen and (max-width : 760px){
+@media screen and (max-width : 1024px){
 	.bdc {
 		position: absolute;
 			right: 0;
@@ -99,6 +110,9 @@ nav {
 		display: none;
 		width: 100%;
 	}
+	.bdc li {
+		text-align: right;
+	}
 	nav {
 		position: absolute;
 			left: 0;
@@ -111,9 +125,15 @@ nav {
 			left: 0;
 			top: -32px;
 	}
-	ul li {
+	.bdc ul li,
+	nav ul li {
 		border-bottom: 1px solid #FFFFFF;
 		display: block;
 		float: none;
 	}
+	.connecT.connecT,
+	.recrutR {
+		float: none;
+}
+
 }
