@@ -23,15 +23,32 @@ nav li {
 	margin: 0 0 0 1px;
 	padding: 0 10px;
 }
-.bdc li ul,
-nav li ul {
-	display: none;
-	position: absolute;
+.bdcNiv1>li:hover,
+nav li:hover {
+	background: -webkit-linear-gradient(top, #7B920A 10%, #ADD100 90%);
+	background: -moz-linear-gradient(top, #7B920A 10%, #ADD100 90%);
+	background: -ms-linear-gradient(top, #7B920A 10%, #ADD100 90%);
+	background: -o-linear-gradient(top, #7B920A 10%, #ADD100 90%);
+	background: linear-gradient(top, #7B920A 10%, #ADD100 90%);
 }
-.bdc li ul,
+.menuIdent {
+	float: left;
+}
+.menuIdent li {
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+li .menuIdent,
 nav li ul {
-	background: #7B920A;
+	background: #ADD100;
 	color: #fff;
+	display: none;
+	padding: 5px;
+	position: absolute;
+		right: 0;
+	width: 200px;
 }
 .bdc li:hover ul,
 nav li:hover ul {
