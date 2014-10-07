@@ -98,29 +98,38 @@ nav {
 .recrutR {
 	float: right;
 }
-.logoBdc.logoBdc {
+.logoBdc.logoBdc,
+.affMobile {
 	display: none;
 }
 
 @media screen and (max-width : 1024px){
+	.affMobile {
+		display: block;
+	}
+	nav .affMobile {
+		display: inline-block;
+	}
 	.bdc {
 		position: absolute;
 			right: 0;
-			top: 32px;
+			top: 44px;
 	}
 	.bdc .affMenu {
 		background-color: #ADD100;
 		position: absolute;
 			right: 0;
-			top: -32px;
+			top: -44px;
 	}
 	.bdc + header {
 		background-color: #eee;
-		margin: 0 40px;
+		line-height: 44px;
+		margin: 0 88px 0 0;
 	}
 	.affMenu {
 		display: block;
-		width: 32px;
+		line-height: 44px;
+		width: 44px;
 	}
 	.bdc ul,
 	nav ul {
@@ -134,13 +143,31 @@ nav {
 		position: absolute;
 			left: 0;
 			right: 0;
-			top: 32px;
+			top: 44px;
 	}
 	nav .affMenu {
 		background-color: #485563;
 		position: absolute;
-			left: 0;
-			top: -32px;
+			right: 44px;
+			top: -44px;
+	}
+	nav input {
+		border: none;
+		border-radius: 3px 0 0 3px;
+		line-height: 25px;
+		margin: 0;
+		padding: 0 5px;
+	}
+	nav button {
+		background-color: #ADD100;
+		border: none;
+		border-radius: 0 3px 3px 0;
+		line-height: 25px;
+		margin: 0 0 0 1px;
+		padding: 0 5px;
+	}
+	nav button::-moz-focus-inner {
+		border: none;
 	}
 	.bdc ul li,
 	nav ul li {
@@ -151,6 +178,9 @@ nav {
 	.connecT.connecT,
 	.recrutR {
 		float: none;
-}
+	}
+	header h1 {
+		line-height: 44px;
+	}
 
 }
