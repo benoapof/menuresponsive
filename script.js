@@ -22,7 +22,7 @@ function callScript(url) {
 	}
 }
 
-window.onresize = function() {
+function tailleUtile() {
 	// scripts si la fenêtre est grande
 	if (window.matchMedia("(min-width : 1024px)").matches) {
 		callScript('grand.js');
@@ -35,6 +35,10 @@ window.onresize = function() {
 	}
 //console.log	(window.innerWidth+'px / '+taille);
 }
+
+window.onresize = tailleUtile();
+
+tailleUtile();
 
 
 /*

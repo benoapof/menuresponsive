@@ -7,6 +7,10 @@ body {
   content: "";
   display: table;
 }
+.stroke {
+	text-decoration: line-through;
+}
+
 .bdc ul,
 nav ul {
 	clear: both;
